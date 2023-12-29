@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Lobster&family=Pacifico&family=Ubuntu:wght@700&family=Zeyada&display=swap');
+        .home{
+            height: 100vh;
+            width: 99vw;
+            background-image: url(background\ \(1\).gif);
+            background-size: cover;
+            color: greenyellow;
+            font-family: 'Pacifico', cursive;
+            
+        }
+        .home1{
+            position: absolute;
+            top: 300px;
+            left: 600px;
+        }
+        .home1 span{
+            color: greenyellow;
+            animation: ashok 1s ease infinite;
+            display: inline-block;
+        }
+        @keyframes ashok {
+            from{
+                transform: scale(1);
+                font-size: 20px;
+            }
+            to{
+                transform: scale(1.5);
+                font-size: 40px;
+            }
+        }
+        .home1 a{
+            margin-top: 10px;
+            background: none;
+            color: rgb(255, 168, 47);
+        }
+        .home1 h1{
+            animation: left 1.2s ease 1;
+        }
+        .home1 h2{
+            animation: right 1.2s ease 1;
+        }
+        @keyframes left {
+            from{
+                transform: translate(-900px);
+            }
+            to{
+                transform: translate(0px);
+            } 
+        }
+        @keyframes right {
+            from{
+                transform: translate(900px);
+            }
+            to{
+                transform: translate(0px);
+            } 
+        }
+        .home2{
+            height: 100vh;
+            width:99vw;
+            background-image: url(background.gif); 
+        }
+        .menu{
+            text-align: right; 
+            position: sticky;   
+
+        }
+        .menu>a{
+            border: none;
+            text-align: right;
+            color: greenyellow;
+            text-decoration: none;
+            padding-right: 50px;
+            font-size: 50px;
+            position: sticky; 
+
+
+        }
+        .grid{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 33% 33% 33% ;
+            grid-template-rows: 25% 25% 25% 25%;
+            border: solid;
+            position: relative;
+            left: 45%;
+            top: 30px;
+            position: relative;
+            height: 50%;
+            width: 48%;
+            border: solid;
+            font-size: 50px;
+            gap: 20px;
+        }
+       
+       
+        .box-1{
+            width: 100%;
+            height: 200px;
+            grid-row: 1/4;
+            grid-column: 1/1;
+            border-radius: 10%;
+            
+        } 
+         .box-2{
+            height: 200px;
+            grid-row: 4/4;
+            grid-column: 1/1;
+            width: 100%;
+            border-radius: 10%;
+        }
+         .box-3{
+            height: 200px;
+            grid-row: 1/3;
+            grid-column: 2/2;
+            width: 100%;
+            border-radius: 10%;
+        }
+        .box-4{
+            height: 200px;
+            grid-row: 3/5;
+            grid-column: 2/2;
+            width: 100%;
+            border-radius: 10%;
+        } 
+        .box-5{
+            height: 200px;
+            grid-row: 5/7;
+            grid-column: 2/2;
+            width: 100%;
+            border-radius: 10%;
+
+        }
+        .box-6{
+            height: 200px;
+            grid-row: 1/4;
+            grid-column: 3/3;
+            width: 100%;
+            border-radius: 10%;
+
+        }  
+        .box-7{
+            height: 200px;
+            grid-row: 4/4;
+            grid-column: 3/3;
+            width: 100%;
+            border-radius: 10%;
+        }
+        .box-1 img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10%;
+        }
+
+        .box-2 img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10%;
+        }
+        .box-3 img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10%;
+        }
+        .box-4 img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10%;
+        }
+        .box-5 img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10%;
+        }
+        .box-6 img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10%;
+        }
+        .box-7 img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10%;
+        }
+        .photo img{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            left: 150px;
+            border-radius: 90%;
+        }
+        div p{
+            color: blueviolet;
+            font-size: 20px;
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 300px;
+            height: 300px;
+            width: 40%;
+        }
+        .project{
+            height: 100vh;
+            width: 99vw;
+            background-image: url(background\ \(1\).gif);
+            background-size: cover;
+            margin-top: -4%;
+        } 
+        .project h1{
+            color: blueviolet;
+            font-size: 80px;
+        }
+        .project1 .outer{
+            height: 500px;
+            width: 800px;
+            /* position: absolute;
+            margin-left: 0px;
+            margin-top: 100px; */
+            background-color: aquamarine;
+            border: black 2px solid;
+        }
+        .project1 .inner{
+            height: 450px;
+            width: 750px;
+            border: red 2px solid;
+            position: relative;
+            margin-top: 25px;
+            background-color: chartreuse;
+        }
+        .project2{
+            height: 100vh;
+            width: 99vw;
+            background-image: url(background.gif);
+            background-size: cover;
+        }
+        .project2 .outer{
+            height: 500px;
+            width: 800px;
+            position: absolute;
+            margin-left: 50%;
+            margin-top: 100px;
+            background-color: aquamarine;
+            border: black 2px solid;
+        }
+        .project2 .inner{
+            height: 450px;
+            width: 750px;
+            border: red 2px solid;
+            position: relative;
+            margin-top: 25px;
+            margin-left: 50px;
+            background-color: chartreuse;
+        } 
+        .contact{
+            height: 100vh;
+            width: 100vw;
+            background-image: url(background.gif);
+            background-size: cover;
+            color: blueviolet;
+            margin-top: -4%;
+            
+        }
+        .contact .box{
+            height: 500px;
+            width: 700px;
+            position: relative;
+            margin-top: 80px;
+            margin-left: 30%;
+            /* display: flex; */
+            /* align-items: center;
+            justify-content: center; */
+            border: black 3px solid;
+            background-color: cornsilk;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="home" id="home"> 
+        <div class="home1">
+            <h1>Hi, I'm <span>A </span>SHOKA G S </h1>
+            <h2>PYTHON FULL STACK DEVELOPER</h2>
+            <a href="#home2">Explore more
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                  </svg></a>
+            
+        </div>
+    </div>
+    <div class="home2" id="home2">
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#home2">About</a>
+            <a href="#project">Project</a>
+            <a href="">Contact</a>
+            <a href="">Resume</a>
+
+        </div>
+        <div class="photo">
+            <img src="photo.jpeg" alt="">
+            <div>
+              <p>Welcome to my portfolio! I'm a passionate full-stack developer dedicated to crafting dynamic and innovative digital solutions. With a blend of front-end finesse and back-end expertise, I thrive on creating seamless user experiences while ensuring robust functionality. Dive into my portfolio to explore a fusion of creativity, technical prowess, and a commitment to delivering cutting-edge web applications.
+              </p>
+            </div>
+        </div>
+        
+        <div class="grid">
+            <div class="item box-1"><img src="html.png" alt=""></div>
+            <div class="item box-2"><img src="css.png" alt=""></div>
+            <div class="item box-3"><img src="js.png" alt=""></div>
+            <div class="item box-4"><img src="python.jfif" alt=""></div>
+            <div class="item box-5"><img src="django.png" alt=""></div> 
+            <div class="item box-6"><img src="sql.png" alt=""></div> 
+            <div class="item box-7"><img src="reactjs.png" alt=""></div>
+        </div>
+    </div>
+    <div class="project" id="project">
+        <h1>Projects</h1>
+        <div class="project1">
+            <div class="outer">
+                <div class="inner"></div>
+        </div>
+
+        <div class="project2">
+            <div class="outer">
+                <div class="inner"></div>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>Contact</h1>
+        <div class="box">
+            <h2>Contact</h2>
+            <label for="name">Enter your Name : </label><input type="text" name="" id="name" placeholder="Enter your name"><br><br>
+            <label for="email">Email : </label><input type="text" name="" id="email" placeholder="example: abc@gmail.com"><br><br>
+            <label for="comments">Comments</label><input type="text" name="" id="comments" placeholder="enter your text"><br><br>
+
+            <button type="submit">SUBMIT</button>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

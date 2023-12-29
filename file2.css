@@ -1,0 +1,720 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 300vh;
+    /* border: 1px solid; */
+    margin: auto;
+}
+header nav{
+    width: 95%;
+    height: 2.5%;
+    /* border: 1px solid; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 5000;
+    box-shadow: 0px 10px 25px #94928e;
+    background-color: aqua;
+}
+header nav ul{
+    margin: auto;
+    display: flex;
+    align-items: center; 
+     justify-content: center; 
+    list-style: none;
+    margin-left: 250px;
+    
+}
+header nav ul li{
+    padding: 3px 30px;
+}
+header nav ul li:last-child{
+    background: black;
+    color: #db0a0a;
+    border-radius: 20px;
+    height: 35px;
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 86%, 48%);
+    font-size: 25px;
+    font-weight: 500px;
+    transition: 0.3s linear;
+
+}
+
+header nav ul li:nth-child(5) a{
+    color: hsl(210, 11%, 89%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+header nav ul li a:hover{
+    color: #e0d5d5;
+
+}
+header nav .bi-three-dots{
+    display: none;
+
+}
+header .content {
+    width: 100%;
+    height: 80%;
+    position: relative;
+
+}
+.content video{
+    height: 80%;
+    width: 100%;
+}
+.mid{
+    height: fit-content;
+    width: 40%;
+    background-color: white;
+    backdrop-filter: (.3);
+    position: absolute;
+    top: 85px;
+    left: 40px;
+    background: none;
+    color: white;
+
+}
+.mid h1{
+    line-height: 40px;
+    font-weight: 800px;
+    font-size: 50px;
+}
+.mid h5{
+    font-size: 20px;
+    font-weight: 400px;
+    color: hsl(0, 92%, 42%);
+    top: 100px;
+}
+.mid button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    background: black;
+    transition: 0.3s linear;
+}
+.mid button:hover{
+    background-color: brown;
+}
+.tripbox{
+    position: relative;
+    width: 95%;
+    height: 0;
+    margin: auto;
+    border: 1px solid;
+    border: none;
+}
+.tripbox .sarchbox{
+    position: absolute;
+    top:10px;
+    left: 0;
+    width: 150%;
+    height: 80px;
+    /* align-items: center; */
+    display: flex;
+    /* justify-content: center; */
+    background:url(https://www.shutterstock.com/image-illustration/3d-rendering-blue-abstract-geometric-260nw-2065761761.jpg);
+    border: 5px;
+    box-shadow: 0px 10px 25px gray;
+    border-radius: 10px;
+}
+.sarchbox .card{
+    width: 200px;
+    height: 100%;
+    /* border: 1px solid; */
+    gap: 5px;
+    margin: 0;
+    padding: 5px;
+    margin-left: 0px;
+    border: none;
+    background: none;
+}
+.card h4{
+    font-size: 15px;
+    margin: 0px;
+    margin-left: 0px;
+    color: white;
+}
+.sarchbox input{
+    margin-top: 5px;
+    outline: none;
+}
+.sarchbox.card input{
+    border: none;
+    outline: none;
+}
+.travlebox{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    margin: auto;
+    top: 0px;
+    border: 1px solid;
+    padding-bottom: 20px;
+    background:url(https://img.freepik.com/premium-photo/3d-background-rendering-colorful-liquid-black-drops-frame-background_79202-226.jpg);
+    background-size: cover;
+    box-shadow: 0px 20px 25px -10px #444141;
+    border: none;
+}
+.travlebox h4{
+    color: #ece8e8;
+}
+.travlebox .cards{
+    width: 94%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+    /* background: transparent; */
+
+}
+.cards .card{
+    height: 200px ;
+    width: 260px;
+    border: 1px solid;
+    display: flex;
+    background: none;
+    border: none;
+    
+}
+.cards .card h3{
+    font-size: 25px;
+    font-family: serif;
+    color: aliceblue;
+}
+.cards .card img{
+    height: 15px;
+    width: 20px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+}
+.minicard {
+    height: 110px;
+    width: 220px;
+    border: 1px solid;
+    margin-left: 20px;
+    background: url(https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-agra.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+.minicard:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 20px white;
+}
+.minicard h5{
+    color: aliceblue;
+}
+.minicard1 {
+    height: 110px;
+    width: 220px;
+    border: 1px solid;
+    margin-left: 20px;
+    background: url(https://www.shutterstock.com/image-photo/statue-liberty-over-scene-new-600nw-1476328154.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+.minicard1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 20px white;
+}
+.minicard2 {
+    height: 110px;
+    width: 220px;
+    border: 1px solid;
+    margin-left: 20px;
+    background: url(https://dynamic.tourtravelworld.com/blog_images/20-reasons-why-people-love-malaysia-tourist-places-20170524041600.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+.minicard2:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 20px white;
+}
+.minicard3 {
+    height: 110px;
+    width: 220px;
+    border: 1px solid;
+    margin-left: 20px;
+    background: url(https://www.visitdubai.com/-/media/images/leisure/campaigns/ultimate-holidays-europe/ultimate-holiday-1600x1067-atlantis.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+.minicard3:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 20px white;
+}
+.botn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botn h5{
+    margin-left: 10px;
+    color: white;
+}
+.botn a{
+    height: 30px;
+    width: 80px;
+    background-color: black;
+    margin-left: 10px;
+    border: 1px #030303;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.places{
+    height: 880px;
+    width: 100%;
+    border: #030303 1px solid;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: url(https://w0.peakpx.com/wallpaper/688/594/HD-wallpaper-3d-earth-3d-earth.jpg);
+    background-size: cover;
+    /* display: grid;
+    grid-template-columns: 25% 25% 25% 25%; */
+}
+.places .minibox{
+    height: 80%;
+    width: 80%;
+    display: grid;
+grid-template-columns:20% 20% 20% 20% 20%;
+margin-left: 10px;
+gap: 50px;
+}
+.places h1{
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-family: serif;
+    color: #beb5b5;
+}
+.minibox .box{
+    width: 250px;
+    height: 200px;
+    border: 1px solid;
+    border: none;
+}
+.box .img {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    background: url(https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2020/01/North-East-Tourism.jpg?fit=800%2C533&ssl=1);
+    background-size: cover;
+    border: none;
+    box-shadow: 0px -5px 20px #beb5b5 ;
+    
+
+}
+.img:hover{
+    transform: scale(1.1);
+    
+}
+.box a{
+    margin-left: 80px;
+    font-size: 30px;
+    height: 20px;
+    width: fit-content;
+    border: 1px solid;
+    color:red;
+    text-decoration: none;
+    
+}
+.box a:hover{
+    color: hsl(0, 36%, 96%);
+    box-shadow: 0px 3px 20px #d6cece;
+}
+.box .img1 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://i0.wp.com/www.zingbus.com/blog/wp-content/uploads/2023/03/rowan-heuvel-sAB4BWrQ4Y4-unsplas.jpg?resize=1024%2C597&ssl=1);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #b9b0b0;
+
+     
+}
+.img1:hover{
+    transform: scale(1.1);
+}
+.box .img2 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     
+     background: url(https://ihplb.b-cdn.net/wp-content/uploads/2021/07/Places-to-Visit-in-India-in-August-750x430.jpg);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #e2d8d8;
+}
+.img2:hover{
+    transform: scale(1.1);
+}
+.box .img3 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     
+     background: url(https://www.trawell.in/admin/images/thumbs/078212873Delhi_Main_thumb.jpg);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #dbd2d2;
+}
+.img3:hover{
+    transform: scale(1.1);
+}
+.box .img4 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM7kAn4G2pHEzlpMGepoc2qU3VNcH-L3TxRQ&usqp=CAU);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #dfd2d2;
+}
+.img4:hover{
+    transform: scale(1.1);
+}
+.box .img5 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://qph.cf2.quoracdn.net/main-qimg-45eb7433db18e71d5cac6fe854b08983-lq);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #dbcdcd;
+}
+.img5:hover{
+    transform: scale(1.1);
+}
+.box .img6 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/mysore-palace.jpg);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #e0d2d2;
+}
+.img6:hover{
+    transform: scale(1.1);
+}
+.box .img7 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://www.grabon.in/indulge/wp-content/uploads/2019/05/Humpi.jpg);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #ddd5d5;
+}
+.img7:hover{
+    transform: scale(1.1);
+}
+.box .img8 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/29/93/c7/front.jpg?w=300&h=300&s=1);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px rgb(219, 207, 207);
+}
+.img8:hover{
+    transform: scale(1.1);
+}
+.box .img9 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-kollam-header-675x430.jpg);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #d1c7c7;
+}
+.img9:hover{
+    transform: scale(1.1);
+}
+.box .img10 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://www.revv.co.in/blogs/wp-content/uploads/2020/06/Coonoor-Tamil-Nadu-1280x720.jpg);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #d8caca;
+}
+.img10:hover{
+    transform: scale(1.1);
+}
+.box .img11 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://www.holidify.com/images/attr_square/2131.png);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #e9d9d9;
+}
+.img11:hover{
+    transform: scale(1.1);
+}
+.box .img12 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://www.theindia.co.in/blog/wp-content/uploads/2021/12/Amber-fort-min.jpg);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #dacfcf;
+}
+.img12:hover{
+    transform: scale(1.1);
+}
+.box .img13 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://www.tourism-of-india.com/blog/wp-content/uploads/2018/07/gateway-of-india.jpg);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #d4c7c7;
+}
+.img13:hover{
+    transform: scale(1.1);
+}
+.box .img14 {
+    height: 130px;
+    width: 200px;
+    border: #030303 solid;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-left: 20px;
+     background: url(https://peopleplaces.in/wp-content/uploads/2023/01/Best-historical-places-in-india.webp);
+     background-size: cover;
+     border: none;
+     box-shadow: 0px -5px 20px #d4c7c7;
+     
+}
+.img14:hover{
+    transform: scale(1.1);
+}
+.deals{
+    height: 600px ;
+    width: 100%;
+    border: 1px solid;
+    border: none;
+    padding: 35px;
+}
+.deals h1 {
+    font-size: 60px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.deals h4{
+    font-size: 30px;
+    margin-left: 450px;
+}
+.prize{
+    height: 400px;
+    width: 100%;
+    border:1px solid;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+}
+.prize .item{
+    height: 440px;
+    width: 310px;
+    border: solid;
+    margin-left: 20px;
+    border: none;
+    box-shadow: 0px 20px 25px hsl(60, 1%, 45%);
+    border-radius: 10px;
+}
+.item img{
+    height: 298px;
+    width: 298px;
+    border-radius: 10px;
+}
+.item .min{
+    height: 290px;
+    width: 290px;
+    background: url(https://ihplb.b-cdn.net/wp-content/uploads/2017/06/munnar-kerala.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.item .min:hover{
+    transform: scale(0.9);
+}
+.item .min1{
+    height: 290px;
+    width: 290px;
+    background: url(https://www.fabhotels.com/blog/wp-content/uploads/2019/09/Places-to-Visit-in-North-India_600.jpg);
+    background-size: cover;
+    border-radius: 20px;
+     margin-left: 10px;
+    
+
+}
+.item .min1:hover{
+    transform: scale(0.9);
+}
+.item .min2{
+    height: 290px;
+    width: 290px;
+    background: url(https://blog.yatradham.org/wp-content/uploads/2021/03/Hampi.jpg);
+    background-size: cover;
+    border-radius: 20px;
+     margin-left: 10px;
+
+}
+.item .min2:hover{
+    transform: scale(0.9);
+}
+.item .min3{
+    height: 290px;
+    width: 290px;
+    background: url(https://www.fabhotels.com/blog/wp-content/uploads/2019/03/Places-to-visit-in-Vijayawada600x400.jpg);
+    background-size: cover;
+    border-radius: 20px;
+     margin-left: 10px;
+    
+}
+.item .min3:hover{
+    transform: scale(0.9);
+}
+.text{
+    height: 150px;
+    width: 290px;
+    border: solid;
+    margin-left: 10px;
+    border: none;
+}
+.text h3{
+    margin-left: 55px;
+    margin-top: 15px;
+}
+.text h5{
+    margin-left: 70px;
+    color: red;
+}
+.text h6{
+    margin-left: 50px;
+}
+.text button{
+    margin-left: 80px;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+}
+.text button:hover{
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 10px;
+}
